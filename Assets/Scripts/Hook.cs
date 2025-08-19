@@ -38,8 +38,8 @@ public class Hook : MonoBehaviour
     }
     public void StartFishing()
     {
-        length = -50;
-        strength = 3;
+        length = IdleManager.instance.length - 20;
+        strength = IdleManager.instance.strength;
         fishCount = 0;
         float time = (-length) * 0.1f;
 
@@ -56,6 +56,8 @@ public class Hook : MonoBehaviour
                     StopFishing();
             });
         });
+
+        ScreensManager.instance.ChangeScreen(Screens.GAME);
         coll.enabled = false;
         canMove = true;
         hookedFishes.Clear();
@@ -82,6 +84,8 @@ public class Hook : MonoBehaviour
                 hookedFishes[i].ResetFish();
                 num += hookedFishes[i].Type.price;
             }
+            IdleManager.instance.totalGain = num;
+            ScreensManager.instance.ChangeScreen(Screens.END);
         });
     }
     private void OnTriggerEnter2D(Collider2D collision)

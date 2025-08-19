@@ -16,7 +16,8 @@ public class IdleManager : MonoBehaviour
 
     private int[] costs = new int[]
     {
-        120, 151, 197, 250, 324, 414, 537, 687, 892, 1145, 1484, 1911, 2479, 3196, 4148, 5359, 6954, 9000, 11687
+        120, 151, 197, 250, 324, 414, 537, 687, 892, 1145, 1484, 1911, 2479, 3196, 4148, 5359, 6954, 9000,
+        11687, 13579, 15781, 17827, 20457, 25468, 30475, 35476, 40147, 45214
     };
 
     public static IdleManager instance;
@@ -88,7 +89,7 @@ public class IdleManager : MonoBehaviour
     {
         offlineEarnings++;
         wallet -= offlineEarningsCost;
-        strengthCost = costs[offlineEarnings - 3];
+        offlineEarningsCost = costs[offlineEarnings - 3];
         PlayerPrefs.SetInt("Offline",offlineEarnings);
         PlayerPrefs.SetInt("Wallet", wallet);
         ScreensManager.instance.ChangeScreen(Screens.MAIN);

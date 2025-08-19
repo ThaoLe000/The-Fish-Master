@@ -361,7 +361,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 277906368}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2108040972}
+        m_TargetAssemblyTypeName: IdleManager, Assembly-CSharp
+        m_MethodName: CollectMoney
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &277906368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,7 +494,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 391724519}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2108040972}
+        m_TargetAssemblyTypeName: IdleManager, Assembly-CSharp
+        m_MethodName: BuyStrength
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &391724519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,7 +811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &582354142
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1886,7 +1910,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1410786703}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2108040972}
+        m_TargetAssemblyTypeName: IdleManager, Assembly-CSharp
+        m_MethodName: CollectDoubleMoney
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1410786703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2149,7 +2185,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1552494864}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2108040972}
+        m_TargetAssemblyTypeName: IdleManager, Assembly-CSharp
+        m_MethodName: CollectMoney
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1552494864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2349,7 +2397,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1701953388}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2108040972}
+        m_TargetAssemblyTypeName: IdleManager, Assembly-CSharp
+        m_MethodName: BuyLength
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1701953388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3026,22 +3086,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f19f8bd40a52d42a56cb7a51cf5254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endScreen: {fileID: 0}
-  gameScreen: {fileID: 0}
-  mainScreen: {fileID: 0}
-  returnScreen: {fileID: 0}
-  lengthButton: {fileID: 0}
-  strengthButton: {fileID: 0}
-  offlineButton: {fileID: 0}
-  gameScreenMoney: {fileID: 0}
-  lengthCostText: {fileID: 0}
-  lengthValueText: {fileID: 0}
-  strengthCostText: {fileID: 0}
-  strengthValueText: {fileID: 0}
-  offlineCostText: {fileID: 0}
-  offlineValueText: {fileID: 0}
-  endScreenMoney: {fileID: 0}
-  returnScreenMoney: {fileID: 0}
+  endScreen: {fileID: 1009060791}
+  gameScreen: {fileID: 582354141}
+  mainScreen: {fileID: 1144733441}
+  returnScreen: {fileID: 1257637048}
+  lengthButton: {fileID: 1701953387}
+  strengthButton: {fileID: 391724518}
+  offlineButton: {fileID: 2118623021}
+  gameScreenMoney: {fileID: 1594710930}
+  lengthCostText: {fileID: 1296273662}
+  lengthValueText: {fileID: 196377686}
+  strengthCostText: {fileID: 515415822}
+  strengthValueText: {fileID: 1446246608}
+  offlineCostText: {fileID: 123533425}
+  offlineValueText: {fileID: 427435812}
+  endScreenMoney: {fileID: 1342073706}
+  returnScreenMoney: {fileID: 873885689}
 --- !u!114 &2108040972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3144,7 +3204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2118623022}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2108040972}
+        m_TargetAssemblyTypeName: IdleManager, Assembly-CSharp
+        m_MethodName: BuyOfflineEarnings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2118623022
 MonoBehaviour:
   m_ObjectHideFlags: 0

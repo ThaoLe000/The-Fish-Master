@@ -80,7 +80,7 @@ public class ScreensManager : MonoBehaviour
     }
     public void SetReturnScreenMoney()
     {
-        returnScreenMoney.text = "$" + IdleManager.instance.totalGain + "gained while waiting";
+        returnScreenMoney.text = "$" + IdleManager.instance.totalGain;
     }
     public void UpdateTexts()
     {
